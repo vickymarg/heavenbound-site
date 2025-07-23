@@ -15,6 +15,8 @@
     </div>
   </div>
 
+  <div class="feather-container" id="featherContainer"></div>
+
   <div class="content" id="truthContent" style="display:none;">
     <header>
       <h1>JayJay’s Truth – In His Name</h1>
@@ -42,7 +44,23 @@
     function continueToPage() {
       document.getElementById("triggerWarning").style.display = "none";
       document.getElementById("truthContent").style.display = "block";
+      document.getElementById("featherContainer").style.display = "block";
     }
+
+    // Create floating feathers
+    function createFeathers() {
+      const container = document.getElementById("featherContainer");
+      for (let i = 0; i < 15; i++) {
+        let feather = document.createElement("div");
+        feather.className = "feather";
+        feather.style.left = Math.random() * 100 + "vw";
+        feather.style.animationDuration = 10 + Math.random() * 10 + "s";
+        feather.style.opacity = Math.random();
+        container.appendChild(feather);
+      }
+    }
+
+    createFeathers();
   </script>
 </body>
 </html>
