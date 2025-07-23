@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JayJay’s Truth – In His Name</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="trigger-warning-screen" id="triggerWarning">
+    <div class="warning-box">
+      <h2>Trigger Warning</h2>
+      <p>This section contains emotionally sensitive content about a real loss and ongoing injustice.</p>
+      <button onclick="continueToPage()">Continue</button>
+    </div>
+  </div>
+
+  <div class="content" id="truthContent" style="display:none;">
+    <header>
+      <h1>JayJay’s Truth – In His Name</h1>
+      <div class="ribbon">Justice for JayJay</div>
+    </header>
+
+    <section class="floating-feathers">
+      <h2>Why I’m Speaking</h2>
+      <p>
+        Kayle Smith is the catalyst.<br><br>
+        JayJay was headbutted and moments later attacked. I watched as the truth was twisted.<br><br>
+        I speak because the lies must stop. This is for my son, and no one will silence me again.<br><br>
+        Kayle’s mother has tried to rewrite the facts. But truth does not bend to protect the guilty.<br><br>
+        I held JayJay’s hand for only a moment after they put him in a coma. I wasn’t there when he was asking for me. That guilt never fades.<br><br>
+        This is my son’s truth — and I will honour it with every breath I have left.
+      </p>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 Heavenbound Letters · In memory of JayJay Taylor</p>
+    </footer>
+  </div>
+
+  <script>
+    function continueToPage() {
+      document.getElementById("triggerWarning").style.display = "none";
+      document.getElementById("truthContent").style.display = "block";
+    }
+  </script>
+</body>
+</html>
